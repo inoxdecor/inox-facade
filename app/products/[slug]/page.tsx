@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { products } from "@/data/products";
 import { ProductDetail } from "@/components/product-detail";
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return products.map(({ slug }) => ({ slug }));
 }

@@ -1,9 +1,19 @@
 // Next exports nested segment payloads on disk while its router requests
 // dot-separated names. Keep both forms for plain static web servers.
-import { readdir, copyFile } from "node:fs/promises";
+import { access, readdir, copyFile } from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-const root = fileURLToPath(new URL("../out/", import.meta.url));
+// Match next build and npm lifecycle hooks, even when a host stages or symlinks
+// source files and this script resolves to a different directory.
+const root = path.resolve(process.cwd(), "out");
+try {
+  await access(path.join(root, "index.html"));
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+  throw new Error(
+    'Static export missing: out/index.html was not generated. Run npm run build with output: "export" in next.config.ts. On Hostinger, use the repository root, build command "npm run build", and output directory "out"; check that the host is not overriding the Next.js config.',
+  );
+}
+
 async function visit(directory, routeRoot = null) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     const file = path.join(directory, entry.name);
