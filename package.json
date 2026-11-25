@@ -8,7 +8,7 @@
     "start": "node scripts/serve.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "format": "prettier --write app components data next.config.ts",
+    "format": "prettier --write app components data next.config.mjs",
     "postbuild": "node scripts/finalize-export.mjs"
   },
   "dependencies": {
