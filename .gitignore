@@ -1,0 +1,14 @@
+node_modules/
+!data/
+!data/**
+.npm-cache/
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
+reference/page-*.png
+reference/contact-sheet.jpg
+reference/desktop.png
+reference/mobile.png
+reference/npm-audit.json

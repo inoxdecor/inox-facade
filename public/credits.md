@@ -1,0 +1,13 @@
+# Image and font credits
+
+Original photographs, product illustrations, drawings and the ISO certificate are extracted from the user-provided **inox facade X.pdf**, pages 1–8. They are catalogue references; their appearance here does not assert that pictured buildings are INOX projects or clients. No third-party-signage photographs are used. No stock images or externally hosted images are used.
+
+The hero image is the photograph cropped from catalogue page 1, with the printed headings removed. Product drawings and photos retain their original content. WebP conversion uses Pillow quality 88–90.
+
+The homepage comparison pairs the original catalogue photograph (After) with an AI-edited version of that same building (Before), created using the built-in image_gen tool. The before image shows aged plaster, damp stains, mildew, peeling paint and worn timber fins. This is an **illustrative renovation concept**, not an actual project before/after pair or claim of completed work. The asset is hosted locally at `/images/illustrations/facade-before.webp`; the generated PNG is retained alongside it. Replace with a rights-cleared, matched pair of INOX project photos before presenting a real transformation. The product finish comparison and 3D models are procedural illustrations, not engineering drawings. Swatches are digital approximations.
+
+## Image generation prompt
+
+Edit target: the supplied architectural building photograph. Create the OLD BEFORE counterpart for a same-building renovation comparison slider. Preserve the EXACT original composition, camera angle, perspective, image aspect ratio, crop, building silhouette, all windows and door positions, columns, pavement, stairs, landscaping, sky and lighting. Change only the facade surface materials: replace clean luxury metal cladding with aged dull beige-grey plaster/concrete in the identical panel areas, visibly neglected with patchy peeling paint, dark rainwater streaks, rising damp near the base, greenish mildew patches, fine cracks and weathering. Make the vertical fins appear aged wood, with restrained realistic termite-like pitting and damaged edges. Strong clearly visible before-versus-new contrast, but still a plausible standing building, not collapsed ruins. The original AFTER image remains unchanged; this new image must align precisely with it in a draggable slider. Photorealistic architectural renovation visualization. No text, labels, logos, watermarks, extra objects or camera changes. Output only this single aged before photograph.
+
+Fonts: Instrument Serif (Rodrigo Fuenzalida), Manrope (Mikhail Sharanda), JetBrains Mono (JetBrains). Downloaded from the Google Fonts repository and hosted locally under the SIL Open Font License. See public/fonts/*-OFL.txt for licenses.

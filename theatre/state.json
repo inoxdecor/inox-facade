@@ -1,0 +1,18 @@
+{
+  "definitionVersion": "0.4.0",
+  "revisionHistory": ["inox-quiet-metal-01"],
+  "sheetsById": {
+    "hero": {
+      "staticOverrides": {"byObject": {"panel": {"rotationY": -0.18}}},
+      "sequence": {"type": "PositionalSequence", "length": 3, "subUnitsPerUnit": 30,
+        "tracksByObject": {"panel": {"trackIdByPropPath": {"[\"rotationY\"]": "rotation"}, "trackData": {"rotation": {"type": "BasicKeyframedTrack", "keyframes": [{"id": "start", "position": 0, "value": -0.65, "connectedRight": true, "handles": [0.5, 1, 0.5, 0]}, {"id": "end", "position": 3, "value": -0.18, "connectedRight": true, "handles": [0.5, 1, 0.5, 0]}]}}}}
+      }
+    },
+    "productIntro": {
+      "staticOverrides": {"byObject": {"panel": {"rotationY": -0.18}}},
+      "sequence": {"type": "PositionalSequence", "length": 2, "subUnitsPerUnit": 30,
+        "tracksByObject": {"panel": {"trackIdByPropPath": {"[\"rotationY\"]": "rotation"}, "trackData": {"rotation": {"type": "BasicKeyframedTrack", "keyframes": [{"id": "start", "position": 0, "value": -0.55, "connectedRight": true, "handles": [0.5, 1, 0.5, 0]}, {"id": "end", "position": 2, "value": -0.18, "connectedRight": true, "handles": [0.5, 1, 0.5, 0]}]}}}}
+      }
+    }
+  }
+}
