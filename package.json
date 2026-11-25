@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --webpack -p 3012",
-    "build": "next build --webpack",
+    "build": "node scripts/build-static.mjs",
     "start": "node scripts/serve.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
